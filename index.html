@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>학교 공공시설 개방현황 판단</title>
+  <style>
+    :root{--bg:#f4f7fb;--card:#fff;--text:#162033;--muted:#667085;--line:#d9e2ef;--blue:#1d4ed8;--blue2:#e8f0ff;--green:#0f766e;--green2:#e6fffb;--orange:#b45309;--orange2:#fff7ed;--red:#b42318;--red2:#fff1f0;--gray:#f2f4f7;--shadow:0 16px 40px rgba(15,23,42,.08);--radius:18px}*{box-sizing:border-box}body{margin:0;font-family:"Pretendard","Noto Sans KR","Malgun Gothic",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}header{background:linear-gradient(135deg,#123c8c,#1d4ed8 58%,#2563eb);color:#fff;padding:34px 22px 44px}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:end}h1{margin:0 0 8px;font-size:clamp(26px,4vw,42px);letter-spacing:-.04em}.hero p{margin:0;color:rgba(255,255,255,.87)}.note{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:var(--radius);padding:18px}.note strong{display:block;margin-bottom:6px}main{margin-top:-26px;padding-bottom:36px}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.toolbar{padding:22px;margin-bottom:16px}.grid{display:grid;grid-template-columns:1.5fr repeat(5,1fr);gap:12px}label{display:block;margin-bottom:6px;color:var(--muted);font-size:13px;font-weight:800}input,select,button{font:inherit}input,select{width:100%;border:1px solid var(--line);border-radius:12px;padding:11px 12px;background:#fff;color:var(--text)}input:focus,select:focus{outline:none;border-color:#93b4ff;box-shadow:0 0 0 4px rgba(37,99,235,.12)}.actions{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin-top:14px}button{border:0;border-radius:12px;padding:11px 15px;cursor:pointer;font-weight:900}button:hover{transform:translateY(-1px)}.primary{background:var(--blue);color:#fff;box-shadow:0 10px 20px rgba(29,78,216,.22)}.secondary{background:var(--blue2);color:var(--blue)}.summary{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:16px}.sum{padding:17px;border-radius:var(--radius);background:#fff;border:1px solid var(--line);box-shadow:0 10px 28px rgba(15,23,42,.06)}.sum span{color:var(--muted);font-size:13px;font-weight:900}.sum strong{display:block;font-size:30px;letter-spacing:-.04em}.layout{display:grid;grid-template-columns:330px 1fr;gap:16px;align-items:start}.judge{padding:22px;position:sticky;top:14px}.judge h2,.table h2{margin:0 0 8px;font-size:20px;letter-spacing:-.03em}.sub{margin:0 0 17px;color:var(--muted);font-size:14px}.judgeForm{display:grid;gap:12px}.result{margin-top:15px;padding:16px;border-radius:16px;background:var(--gray);border:1px solid var(--line)}.result strong{display:block;margin-bottom:8px}.result ul{margin:8px 0 0;padding-left:20px;color:var(--muted);font-size:14px}.table{overflow:hidden}.tableHead{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:22px 22px 12px}.tableActions{display:flex;gap:8px;flex-wrap:wrap}.tableWrap{overflow-x:auto;border-top:1px solid var(--line)}table{width:100%;min-width:930px;border-collapse:collapse;background:#fff}th,td{padding:13px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top;font-size:14px}th{background:#f8fafc;color:#344054;font-size:13px;white-space:nowrap}tbody tr:hover{background:#fbfdff}.badge{display:inline-flex;border-radius:999px;padding:5px 9px;font-size:12px;font-weight:900;white-space:nowrap}.good{background:var(--green2);color:var(--green)}.warn{background:var(--orange2);color:var(--orange)}.bad{background:var(--red2);color:var(--red)}.gray{background:var(--gray);color:#475467}.blue{background:var(--blue2);color:var(--blue)}.empty{padding:30px;text-align:center;color:var(--muted)}.guide{margin-top:16px;padding:18px 20px;background:#fff;border:1px dashed #b6c7e2;border-radius:var(--radius);color:#475467;font-size:14px}footer{padding:18px 0 32px;text-align:center;color:var(--muted);font-size:13px}@media(max-width:980px){.hero,.layout{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.summary{grid-template-columns:repeat(2,1fr)}.judge{position:static}}@media(max-width:600px){.wrap{width:min(100% - 22px,1180px)}header{padding:26px 16px 38px}.grid,.summary{grid-template-columns:1fr}.tableHead{align-items:flex-start;flex-direction:column}}@media print{header,.toolbar,.judge,.tableActions,footer{display:none}main{margin:0}.layout,.summary{display:block}.card,.sum{box-shadow:none}table{min-width:auto}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap hero">
+      <div><h1>학교 공공시설 개방현황 판단</h1><p>학교 체육관, 운동장, 강당 등 공공시설의 개방 여부를 조건별로 빠르게 확인하는 업무용 단일 페이지입니다.</p></div>
+      <div class="note"><strong>판단 기준</strong><span>개방상태, 이용 요일, 이용 시간, 이용대상, 예약 필요 여부를 종합하여 이용 가능 여부를 표시합니다.</span></div>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="card toolbar">
+      <div class="grid">
+        <div><label for="keyword">통합 검색</label><input id="keyword" type="search" placeholder="학교명, 시설명, 담당부서, 비고 검색"></div>
+        <div><label for="districtFilter">자치구</label><select id="districtFilter"><option value="">전체</option></select></div>
+        <div><label for="typeFilter">시설유형</label><select id="typeFilter"><option value="">전체</option></select></div>
+        <div><label for="statusFilter">개방상태</label><select id="statusFilter"><option value="">전체</option><option>개방중</option><option>조건부 개방</option><option>미개방</option><option>점검중</option></select></div>
+        <div><label for="dayFilter">희망 요일</label><select id="dayFilter"><option value="">전체</option><option>월</option><option>화</option><option>수</option><option>목</option><option>금</option><option>토</option><option>일</option></select></div>
+        <div><label for="targetFilter">이용대상</label><select id="targetFilter"><option value="">전체</option><option>지역주민</option><option>동호회</option><option>학생</option><option>기관</option></select></div>
+      </div>
+      <div class="actions"><button class="primary" id="applyBtn" type="button">조건 적용</button><button class="secondary" id="resetBtn" type="button">초기화</button><span id="conditionText" style="color:var(--muted);font-size:14px"></span></div>
+    </section>
+    <section class="summary">
+      <div class="sum"><span>조회 결과</span><strong id="totalCount">0</strong></div>
+      <div class="sum"><span>이용 가능</span><strong id="availableCount">0</strong></div>
+      <div class="sum"><span>예약 필요</span><strong id="reservationCount">0</strong></div>
+      <div class="sum"><span>조건 제한</span><strong id="limitedCount">0</strong></div>
+      <div class="sum"><span>미개방·점검</span><strong id="closedCount">0</strong></div>
+    </section>
+    <section class="layout">
+      <aside class="card judge">
+        <h2>개방 가능 여부 판단</h2><p class="sub">희망 조건을 넣으면 현재 목록에서 이용 가능한 시설을 추려줍니다.</p>
+        <div class="judgeForm">
+          <div><label for="judgeDay">이용 희망 요일</label><select id="judgeDay"><option>월</option><option>화</option><option>수</option><option>목</option><option>금</option><option>토</option><option>일</option></select></div>
+          <div><label for="judgeTime">이용 희망 시간</label><input id="judgeTime" type="time" value="18:00"></div>
+          <div><label for="judgeTarget">이용자 구분</label><select id="judgeTarget"><option>지역주민</option><option>동호회</option><option>학생</option><option>기관</option></select></div>
+          <button class="primary" id="judgeBtn" type="button">이 조건으로 판단</button>
+        </div>
+        <div id="judgeResult" class="result"><strong>조건을 입력하고 판단 버튼을 누르세요.</strong><div style="color:#667085">왼쪽 조건과 상단 필터가 함께 적용됩니다.</div></div>
+      </aside>
+      <section class="card table">
+        <div class="tableHead"><div><h2>시설 개방현황</h2><p class="sub">예시 데이터입니다. 실제 자료가 있으면 script 안의 facilities 배열만 교체하면 됩니다.</p></div><div class="tableActions"><button class="secondary" id="csvBtn" type="button">CSV 내려받기</button><button class="secondary" id="printBtn" type="button">인쇄</button></div></div>
+        <div class="tableWrap"><table><thead><tr><th>판단</th><th>학교명</th><th>자치구</th><th>시설명</th><th>유형</th><th>개방상태</th><th>요일</th><th>시간</th><th>대상</th><th>예약</th><th>담당부서</th><th>비고</th></tr></thead><tbody id="facilityRows"></tbody></table><div id="emptyState" class="empty" hidden>조건에 맞는 시설이 없습니다.</div></div>
+      </section>
+    </section>
+    <div class="guide"><strong>활용 방법</strong> 실제 학교 공공시설 개방현황 CSV 또는 엑셀 데이터를 기준으로 학교명, 자치구, 시설유형, 개방상태, 요일, 시간, 이용대상, 예약필요 값을 정리한 뒤 이 파일의 예시 데이터 부분을 바꾸면 됩니다.</div>
+  </main>
+  <footer>학교 공공시설 개방현황 판단용 단일 HTML 웹앱</footer>
+  <script>
+    const dayOrder=["일","월","화","수","목","금","토"];
+    const facilities=[
+      {school:"서울가온초등학교",district:"강남구",facility:"체육관",type:"체육관",status:"개방중",days:["월","수","금"],start:"18:00",end:"21:00",targets:["지역주민","동호회"],reservation:true,department:"행정실",note:"학교 행사 시 제한"},
+      {school:"서울누리중학교",district:"서초구",facility:"운동장",type:"운동장",status:"개방중",days:["토","일"],start:"09:00",end:"17:00",targets:["지역주민","학생"],reservation:false,department:"행정실",note:"우천 시 이용 불가"},
+      {school:"서울마루고등학교",district:"송파구",facility:"강당",type:"강당",status:"조건부 개방",days:["화","목"],start:"19:00",end:"21:30",targets:["기관","지역주민"],reservation:true,department:"교육지원부",note:"공익 목적 행사 우선"},
+      {school:"서울푸른초등학교",district:"마포구",facility:"주차장",type:"주차장",status:"미개방",days:[],start:"",end:"",targets:[],reservation:false,department:"행정실",note:"학생 안전 문제로 미개방"},
+      {school:"서울하늘중학교",district:"노원구",facility:"운동장",type:"운동장",status:"점검중",days:["토"],start:"10:00",end:"16:00",targets:["지역주민"],reservation:true,department:"행정실",note:"시설 보수 완료 후 재개방"},
+      {school:"서울빛나고등학교",district:"강서구",facility:"체육관",type:"체육관",status:"개방중",days:["월","화","수","목","금"],start:"17:30",end:"20:30",targets:["동호회","기관"],reservation:true,department:"행정실",note:"배드민턴, 배구 가능"},
+      {school:"서울새봄초등학교",district:"은평구",facility:"도서실",type:"도서실",status:"조건부 개방",days:["수","토"],start:"13:00",end:"17:00",targets:["학생","지역주민"],reservation:false,department:"도서담당",note:"방학 중 별도 운영"},
+      {school:"서울한강중학교",district:"영등포구",facility:"시청각실",type:"강당",status:"개방중",days:["금"],start:"18:00",end:"21:00",targets:["기관","지역주민"],reservation:true,department:"행정실",note:"음향장비 별도 승인"},
+      {school:"서울다온고등학교",district:"동대문구",facility:"운동장",type:"운동장",status:"조건부 개방",days:["일"],start:"08:00",end:"12:00",targets:["지역주민","동호회"],reservation:true,department:"행정실",note:"소음 민원 발생 시 제한"},
+      {school:"서울나래초등학교",district:"관악구",facility:"체육관",type:"체육관",status:"개방중",days:["토","일"],start:"09:00",end:"18:00",targets:["지역주민","동호회","기관"],reservation:true,department:"행정실",note:"전기료 등 실비 부과 가능"}
+    ];
+    const $=id=>document.getElementById(id);let currentRows=[];
+    function unique(key){return [...new Set(facilities.map(x=>x[key]).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"ko"))}
+    function fill(id,values){const s=$(id);values.forEach(v=>{const o=document.createElement("option");o.value=v;o.textContent=v;s.appendChild(o)})}
+    function mins(v){if(!v)return null;const [h,m]=v.split(":").map(Number);return h*60+m}
+    function targetOk(item,target){return !target||item.targets.includes("전체")||item.targets.includes(target)}
+    function judge(item,day,time,target){if(item.status==="미개방"||item.status==="점검중")return{level:"bad",label:item.status,reason:item.status==="점검중"?"시설 점검 중입니다.":"현재 미개방 시설입니다."};if(day&&!item.days.includes(day))return{level:"gray",label:"요일 불가",reason:"희망 요일에 개방하지 않습니다."};if(!targetOk(item,target))return{level:"warn",label:"대상 제한",reason:"이용대상에 포함되지 않습니다."};if(time&&item.start&&item.end){const t=mins(time),s=mins(item.start),e=mins(item.end);if(t<s||t>e)return{level:"gray",label:"시간 외",reason:"희망 시간이 개방시간 밖입니다."}}if(item.reservation)return{level:"warn",label:"예약 후 가능",reason:"사전 예약이 필요합니다."};return{level:"good",label:"이용 가능",reason:"입력 조건 기준으로 이용 가능합니다."}}
+    function statusBadge(s){const m={"개방중":"good","조건부 개방":"warn","미개방":"bad","점검중":"gray"};return `<span class="badge ${m[s]||"gray"}">${s}</span>`}
+    function resultBadge(r){return `<span class="badge ${r.level}">${r.label}</span><br><small style="color:#667085">${r.reason}</small>`}
+    function filterRows(){const kw=$("keyword").value.trim().toLowerCase(),d=$("districtFilter").value,t=$("typeFilter").value,s=$("statusFilter").value,day=$("dayFilter").value,target=$("targetFilter").value;return facilities.filter(x=>{const text=[x.school,x.district,x.facility,x.type,x.status,x.department,x.note,x.targets.join(" ")].join(" ").toLowerCase();return(!kw||text.includes(kw))&&(!d||x.district===d)&&(!t||x.type===t)&&(!s||x.status===s)&&(!day||x.days.includes(day))&&(!target||targetOk(x,target))})}
+    function render(){const day=$("judgeDay").value,time=$("judgeTime").value,target=$("judgeTarget").value;const rows=filterRows();currentRows=rows;const body=$("facilityRows");body.innerHTML="";rows.forEach(x=>{const r=judge(x,day,time,target);const tr=document.createElement("tr");tr.innerHTML=`<td>${resultBadge(r)}</td><td><strong>${x.school}</strong></td><td>${x.district}</td><td>${x.facility}</td><td>${x.type}</td><td>${statusBadge(x.status)}</td><td>${x.days.length?x.days.join("·"):"-"}</td><td>${x.start&&x.end?x.start+"~"+x.end:"-"}</td><td>${x.targets.length?x.targets.join(", "):"-"}</td><td>${x.reservation?'<span class="badge blue">필요</span>':'<span class="badge good">불필요</span>'}</td><td>${x.department}</td><td>${x.note}</td>`;body.appendChild(tr)});$("emptyState").hidden=rows.length>0;summary(rows,day,time,target);condition(rows.length)}
+    function summary(rows,day,time,target){const ev=rows.map(x=>judge(x,day,time,target));$("totalCount").textContent=rows.length;$("availableCount").textContent=ev.filter(r=>r.label==="이용 가능"||r.label==="예약 후 가능").length;$("reservationCount").textContent=rows.filter(x=>x.reservation).length;$("limitedCount").textContent=ev.filter(r=>["시간 외","요일 불가","대상 제한"].includes(r.label)).length;$("closedCount").textContent=ev.filter(r=>["미개방","점검중"].includes(r.label)).length}
+    function condition(count){const p=[];if($("districtFilter").value)p.push($("districtFilter").value);if($("typeFilter").value)p.push($("typeFilter").value);if($("statusFilter").value)p.push($("statusFilter").value);if($("dayFilter").value)p.push($("dayFilter").value+"요일");if($("targetFilter").value)p.push($("targetFilter").value);$("conditionText").textContent=p.length?`${p.join(" · ")} 조건으로 ${count}건 조회됨`:`전체 조건으로 ${count}건 조회됨`}
+    function renderJudge(){const day=$("judgeDay").value,time=$("judgeTime").value,target=$("judgeTarget").value;const judged=filterRows().map(item=>({item,result:judge(item,day,time,target)}));const ok=judged.filter(x=>x.result.label==="이용 가능"),rv=judged.filter(x=>x.result.label==="예약 후 가능");const box=$("judgeResult");if(ok.length||rv.length){const top=[...ok,...rv].slice(0,5);box.style.background=ok.length?"var(--green2)":"var(--orange2)";box.style.borderColor=ok.length?"#99f6e4":"#fed7aa";box.innerHTML=`<strong>${ok.length+rv.length}개 시설이 이용 가능 범위입니다.</strong><div style="color:#475467">${day}요일 ${time}, ${target} 기준입니다.</div><ul>${top.map(x=>`<li>${x.item.school} ${x.item.facility} - ${x.result.label}</li>`).join("")}</ul>`}else{box.style.background="var(--red2)";box.style.borderColor="#fecaca";box.innerHTML='<strong>현재 조건으로 바로 이용 가능한 시설이 없습니다.</strong><div style="color:#475467">요일, 시간, 이용자 구분 또는 시설유형 조건을 완화해서 다시 확인해 보세요.</div>'}render()}
+    function reset(){["keyword","districtFilter","typeFilter","statusFilter","dayFilter","targetFilter"].forEach(id=>$(id).value="");render()}
+    function exportCSV(){const day=$("judgeDay").value,time=$("judgeTime").value,target=$("judgeTarget").value;const head=["판단결과","판단사유","학교명","자치구","시설명","시설유형","개방상태","개방요일","개방시간","이용대상","예약필요","담당부서","비고"];const lines=[head.join(",")];currentRows.forEach(x=>{const r=judge(x,day,time,target);const vals=[r.label,r.reason,x.school,x.district,x.facility,x.type,x.status,x.days.join("·")||"-",x.start&&x.end?`${x.start}~${x.end}`:"-",x.targets.join("·")||"-",x.reservation?"필요":"불필요",x.department,x.note].map(v=>`"${String(v).replaceAll('"','""')}"`);lines.push(vals.join(","))});const blob=new Blob(["\ufeff"+lines.join("\n")],{type:"text/csv;charset=utf-8"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="학교공공시설개방현황_판단결과.csv";a.click();URL.revokeObjectURL(url)}
+    function init(){fill("districtFilter",unique("district"));fill("typeFilter",unique("type"));const now=new Date();$("judgeDay").value=dayOrder[now.getDay()];$("judgeTime").value=String(now.getHours()).padStart(2,"0")+":"+String(now.getMinutes()).padStart(2,"0");["keyword","districtFilter","typeFilter","statusFilter","dayFilter","targetFilter","judgeDay","judgeTime","judgeTarget"].forEach(id=>{$(id).addEventListener("input",render);$(id).addEventListener("change",render)});$("applyBtn").addEventListener("click",render);$("resetBtn").addEventListener("click",reset);$("judgeBtn").addEventListener("click",renderJudge);$("csvBtn").addEventListener("click",exportCSV);$("printBtn").addEventListener("click",()=>window.print());render()}
+    init();
+  </script>
+</body>
+</html>
